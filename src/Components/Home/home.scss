@@ -1,0 +1,121 @@
+.banner {
+    height: 400px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+flex-direction: column;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: black ;
+        opacity: 0.4;
+    }
+    >h1,p{
+        color: white;
+        width: 40%;
+        padding: 1rem;
+        font-size: 2.5rem;
+        z-index: 10;
+        // text-align: center;
+    }
+    >P{
+        font-size: 1.1rem;
+        letter-spacing: 3px;
+        word-spacing: 2px;
+    }
+    .btn{
+        z-index: 10;
+        width: 40%;
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        button{
+            background-color: white;
+            padding: 0.7rem;
+            width: 110px;
+            margin: 5px;
+            font-size: 1rem;
+            color: black;
+            border: none;
+            outline: none;
+            font-weight: 600;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(odd){
+                background-color: white;
+            }
+            &:nth-child(even){
+                background-color: rgba(196, 193, 193, 0.829);
+            }
+            >svg{
+                font-size: 1.4rem;
+                margin: 0 5px;
+            }
+        }
+        
+    }
+    
+}
+
+.row {
+    background-color: black;
+    padding: 1rem;
+
+    >h2 {
+        color: white;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
+    >div {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+    }
+}
+
+.card {
+    >img {
+        width: 200px;
+        cursor: pointer;
+        transition: all 0.5s;
+        // margin: 0.3rem;
+
+
+        &:hover {
+            transform: translateY(-5px) scale(1.02);
+        }
+
+    }
+}
+
+.genre_box {
+    display: flex;
+    overflow-x: auto;
+    background-color: white;
+    margin: 1rem;
+
+    >a {
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        padding: 0.5rem 1.5rem;
+        margin: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    }
+}
